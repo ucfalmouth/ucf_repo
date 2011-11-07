@@ -16,7 +16,7 @@ projects[drupal][version] = "7.8"
 ; Include Build Kit distro makefile via URL
 includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/refs/heads/7.x-2.x:/distro.make
 
-projects[buildkit][type] = profile
-projects[buildkit][download][type] = git
-projects[buildkit][download][url] = git@github.com:tombola/ucf_repo.git
-projects[buildkit][download][branch] = profile
+projects[ucf_repo][type] = profile
+projects[ucf_repo][download][type] = git
+projects[ucf_repo][download][url] = git@github.com:tombola/ucf_repo.git
+projects[ucf_repo][download][branch] = profile
