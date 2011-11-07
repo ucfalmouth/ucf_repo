@@ -10,4 +10,4 @@ projects[views_oai_pmh][subdir] = contrib
 
 ; Themes ======================================================================
 
-projects[basic][version] = 7.x-2.0-rc3
+projects[basic][subdir] = contrib
