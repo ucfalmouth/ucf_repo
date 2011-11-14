@@ -25,3 +25,6 @@ dependencies[] = features
 dependencies[] = strongarm
 dependencies[] = views
 dependencies[] = views_ui
+
+dependencies[] = admin_menu
+dependencies[] = views_oai_pmh
