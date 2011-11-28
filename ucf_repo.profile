@@ -3,16 +3,16 @@
  * Implements hook_install_tasks().
  */
 function ucf_repo_install_tasks ($install_state) {
-	$task['machine_name'] = array(
-	  'display_name' => st('Institution specific setup'),
+	$task['ucf_repo_research_environment'] = array(
+	  'display_name' => st('Research Environment'),
 	  'display' => TRUE,
 	  'type' => 'form',
 	  'run' => INSTALL_TASK_RUN_IF_REACHED,
-	  'function' => 'ucf_repo_institutional_info_form',
+	  'function' => 'ucf_repo_research_environment_form',
 	);
 }
 
-function ucf_repo_institutional_info_form ($form_state) {
+function ucf_repo_research_environment_form ($form_state) {
 	$form['description'] = array(
 		'#type' => 'item',
 		'#title' => t('Form to choose whether or not to setup repository according to falmouth institutional structure')
@@ -25,7 +25,7 @@ function ucf_repo_institutional_info_form ($form_state) {
   return $form;
 }
 
-function ucf_repo_institutional_info_form_submit ($form, $form_state) {
+function ucf_repo_research_environment_form_submit ($form, $form_state) {
 	module_enable(
 		array(
 		'institutional_structure',
