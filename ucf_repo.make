@@ -19,3 +19,9 @@ projects[views_oai_pmh][subdir] = contrib
 ; Themes ======================================================================
 
 projects[basic][subdir] = contrib
+
+; Features ====================================================================
+
+projects[ucf_repo_features][subdir] = contrib
+projects[ucf_repo_features][download][type] = git
+projects[ucf_repo_features][download][url] = git@github.com:ucfalmouth/ucf_repo_features.git
