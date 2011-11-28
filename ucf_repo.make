@@ -22,6 +22,7 @@ projects[basic][subdir] = contrib
 
 ; Features ====================================================================
 
+projects[ucf_repo_features][type] = module
 projects[ucf_repo_features][subdir] = contrib
 projects[ucf_repo_features][download][type] = git
 projects[ucf_repo_features][download][url] = git@github.com:ucfalmouth/ucf_repo_features.git
