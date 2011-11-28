@@ -13,7 +13,7 @@ dependencies[] = path
 dependencies[] = taxonomy
 
 ; Contrib
-dependencies[] = admin
+; dependencies[] = admin
 dependencies[] = openid
 dependencies[] = openidadmin
 dependencies[] = context
@@ -25,3 +25,8 @@ dependencies[] = features
 dependencies[] = strongarm
 dependencies[] = views
 dependencies[] = views_ui
+
+dependencies[] = admin_menu
+dependencies[] = backup_migrate
+dependencies[] = node_reference
+dependencies[] = user_reference

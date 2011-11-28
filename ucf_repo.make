@@ -8,6 +8,9 @@ includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/refs/heads/7.
 
 projects[admin_menu][subdir] = contrib
 projects[views_oai_pmh][subdir] = contrib
+projects[admin_menu][subdir] = contrib
+projects[backup_migrate][subdir] = contrib
+projects[references][subdir] = contrib
 
 ; Themes ======================================================================
 
