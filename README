@@ -1,0 +1,3 @@
+The ucf_repo project stems from this git repo.
+
+Using drush to build a local repository installation from the included make file will bring in all other feature and module files that are required, including external libraries. Provided your server is correctly setup you should then be able to navigate to the web root and will be prompted to provide database authentication information, followed by some basic options to configure the repository (options are all reversible).
