@@ -48,6 +48,7 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 			'ucf_institution',
 			)
 		);
+		watchdog('ucf_repo', 'ucf research environment selected');
 	}
 }
 
