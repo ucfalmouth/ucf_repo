@@ -1,39 +1,52 @@
 <?php
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Allows the profile to alter the site configuration form.
+ */
+function ucf_repo_form_install_configure_form_alter(&$form, $form_state) {
+  // Pre-populate the site name with the server name.
+  $form['site_information']['site_name']['#default_value'] = t('Repository');
+}
+
 /**
  * Implements hook_install_tasks().
  */
 function ucf_repo_install_tasks ($install_state) {
-	$task['ucf_repo_research_environment'] = array(
+	$tasks['ucf_repo_research_environment_form'] = array(
 	  'display_name' => st('Research Environment'),
 	  'display' => TRUE,
 	  'type' => 'form',
-	  'run' => INSTALL_TASK_RUN_IF_REACHED,
-	  'function' => 'ucf_repo_research_environment_form',
 	);
+	return $tasks;
 }
 
 function ucf_repo_research_environment_form ($form_state) {
 	$form['description'] = array(
-		'#type' => 'item',
-		'#title' => t('Form to choose whether or not to setup repository according to falmouth institutional structure')
-	)
+	'#type' => 'item',
+	'#title' => t('Form to choose whether or not to setup repository according to falmouth institutional structure')
+	);
 	$form['ucf_institution'] = array(
-    '#type' => 'checkbox', 
-    '#title' => t('UCF Research Environment'), 
+	'#type' => 'checkbox', 
+	'#title' => t('UCF Research Environment'), 
 	'#description' => 'Setup according to Falmouth research environment'
-  );
+	);
+	$form['submit'] = array('#type' => 'submit', '#value' => t('submit'));
+	$form['#submit'][] = 'ucf_repo_research_environment_form_submit';
   return $form;
 }
 
 function ucf_repo_research_environment_form_submit ($form, $form_state) {
-	module_enable(
-		array(
-		'institutional_structure',
-		'ucf_research_groups',
-		'deposit_workflow',
-		'ucf_institution',
-		)
-	)
+	if ($form['ucf_institution']['#value']) {
+		module_enable(
+			array(
+			'institutional_structure',
+			'ucf_research_groups',
+			'deposit_workflow',
+			'ucf_institution',
+			)
+		);
+	}
 }
 
 ?>
