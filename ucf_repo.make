@@ -15,6 +15,7 @@ projects[rubik][subdir] = contrib
 
 projects[admin_menu][subdir] = contrib
 projects[views_oai_pmh][subdir] = contrib
+projects[node_export][subdir] = contrib
 
 ; Themes ======================================================================
 
