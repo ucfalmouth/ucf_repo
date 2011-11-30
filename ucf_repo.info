@@ -31,4 +31,5 @@ dependencies[] = backup_migrate
 dependencies[] = views_oai_pmh
 dependencies[] = node_reference
 dependencies[] = user_reference
+dependencies[] = list
 dependencies[] = profile2
