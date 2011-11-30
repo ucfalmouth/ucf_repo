@@ -27,5 +27,6 @@ dependencies[] = views
 dependencies[] = views_ui
 
 dependencies[] = admin_menu
+dependencies[] = backup_migrate
 dependencies[] = views_oai_pmh
 dependencies[] = node_reference
