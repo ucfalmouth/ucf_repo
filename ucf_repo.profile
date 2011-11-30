@@ -42,9 +42,7 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 			array(
 			'uuid',
 			'node_export',
-			'institutional_structure',
 			'ucf_research_groups',
-			'deposit_workflow',
 			'ucf_institution',
 			)
 		);

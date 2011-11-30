@@ -33,3 +33,6 @@ dependencies[] = node_reference
 dependencies[] = user_reference
 dependencies[] = list
 dependencies[] = profile2
+
+dependencies[] = institutional_structure
+dependencies[] = deposit_workflow
