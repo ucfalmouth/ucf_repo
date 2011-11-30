@@ -17,6 +17,7 @@ projects[admin_menu][subdir] = contrib
 projects[backup_migrate][subdir] = contrib
 projects[views_oai_pmh][subdir] = contrib
 projects[references][subdir] = contrib
+projects[entity][subdir] = contrib
 projects[profile2][subdir] = contrib
 projects[uuid][subdir] = contrib
 projects[node_export][subdir] = contrib
