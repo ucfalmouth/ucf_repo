@@ -31,6 +31,11 @@ function ucf_repo_research_environment_form ($form_state) {
 	'#title' => t('UCF Research Environment'), 
 	'#description' => 'Setup according to Falmouth research environment'
 	);
+	$form['dev_mode'] = array(
+	'#type' => 'checkbox', 
+	'#title' => t('Development mode'), 
+	'#description' => 'Setup with development modules and features enabled'
+	);
 	$form['submit'] = array('#type' => 'submit', '#value' => t('submit'));
 	$form['#submit'][] = 'ucf_repo_research_environment_form_submit';
   return $form;
@@ -47,6 +52,15 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 			)
 		);
 		watchdog('ucf_repo', 'ucf research environment selected');
+	}
+	if ($form['dev_mode']['#value']) {
+		module_enable(
+			array(
+			'devel',
+			'dev_tweaks',
+			)
+		);
+		watchdog('ucf_repo', 'dev mode selected');
 	}
 }
 
