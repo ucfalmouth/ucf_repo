@@ -34,5 +34,6 @@ dependencies[] = user_reference
 dependencies[] = list
 dependencies[] = profile2
 
-dependencies[] = institutional_structure
-dependencies[] = deposit_workflow
+; Features
+dependencies[] = repo_structure
+dependencies[] = repo_output
