@@ -35,5 +35,6 @@ dependencies[] = list
 dependencies[] = profile2
 
 ; Features
+dependencies[] = repository_defaults
 dependencies[] = repo_institution
 dependencies[] = repo_output
