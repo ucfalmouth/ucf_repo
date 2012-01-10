@@ -37,3 +37,8 @@ dependencies[] = profile2
 ; Features
 dependencies[] = repo_institution
 dependencies[] = repo_output
+dependencies[] = repo_researcher
+dependencies[] = repo_researcher_c4r
+dependencies[] = repo_researchgroup
+
+dependencies[] = ldap_authentication
