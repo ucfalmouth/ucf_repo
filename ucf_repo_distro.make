@@ -18,4 +18,4 @@ projects[drupal][version] = "7.8"
 
 projects[ucf_repo][type] = profile
 projects[ucf_repo][download][type] = git
-projects[ucf_repo][download][url] = git@github.com:tombola/ucf_repo.git
+projects[ucf_repo][download][url] = git@github.com:ucfalmouth/ucf_repo.git

@@ -7,5 +7,5 @@ function ucf_repo_install() {
   //include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
   //standard_install();
   theme_enable(array('rubik'));
-  variable_set('theme_default', 'rubik');
+  variable_set('theme_default', 'apartik');
 }
