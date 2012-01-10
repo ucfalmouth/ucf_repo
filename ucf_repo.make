@@ -28,6 +28,7 @@ projects[date][subdir] = contrib
 ; Themes ======================================================================
 
 projects[basic][subdir] = contrib
+projects[antonelli][subdir] = contrib
 projects[apartik][type] = theme
 projects[apartik][subdir] = custom
 projects[apartik][download][type] = git
