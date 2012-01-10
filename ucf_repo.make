@@ -28,10 +28,10 @@ projects[date][subdir] = contrib
 ; Themes ======================================================================
 
 projects[basic][subdir] = contrib
-projects[ucf_repo_features][type] = theme
-projects[ucf_repo_features][subdir] = custom
-projects[ucf_repo_features][download][type] = git
-projects[ucf_repo_features][download][url] = git@github.com:tombola/apartik.git
+projects[apartik][type] = theme
+projects[apartik][subdir] = custom
+projects[apartik][download][type] = git
+projects[apartik][download][url] = git@github.com:tombola/apartik.git
 
 ; Features ====================================================================
 
