@@ -24,6 +24,13 @@ projects[node_export][subdir] = contrib
 projects[node_export][patch][installfix][url] = "http://dl.dropbox.com/u/21129417/build/ucf_repo/node_export.installprofile.patch"
 projects[date][subdir] = contrib
 
+projects[boxes][subdir] = contrib
+projects[views_boxes][subdir] = contrib
+projects[entity_autocomplete][subdir] = contrib
+
+projects[ds][subdir] = contrib
+projects[spaces][subdir] = contrib
+
 projects[module_filter][subdir] = contrib
 
 ; Themes ======================================================================

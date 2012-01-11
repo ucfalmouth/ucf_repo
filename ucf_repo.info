@@ -26,13 +26,23 @@ dependencies[] = strongarm
 dependencies[] = views
 dependencies[] = views_ui
 
-dependencies[] = admin_menu
-dependencies[] = backup_migrate
-dependencies[] = views_oai_pmh
+dependencies[] = boxes
+dependencies[] = views_boxes
+
+dependencies[] = ds
+dependencies[] = ds_search
+dependencies[] = ds_forms
+dependencies[] = ds_extras
+
 dependencies[] = node_reference
 dependencies[] = user_reference
 dependencies[] = list
 dependencies[] = profile2
+
+dependencies[] = admin_menu
+dependencies[] = backup_migrate
+dependencies[] = views_oai_pmh
+
 
 ; Features
 dependencies[] = repository_defaults
