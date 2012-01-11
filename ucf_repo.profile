@@ -58,6 +58,7 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 			array(
 			'devel',
 			'dev_tweaks',
+			'module_filter',
 			)
 		);
 		watchdog('ucf_repo', 'dev mode selected');
