@@ -33,6 +33,7 @@ projects[workbench][subdir] = contrib
 projects[rules][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
 projects[spaces][subdir] = contrib
+projects[field_group][subdir] = contrib
 
 projects[module_filter][subdir] = contrib
 
