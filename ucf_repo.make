@@ -29,6 +29,9 @@ projects[views_boxes][subdir] = contrib
 projects[entity_autocomplete][subdir] = contrib
 
 projects[ds][subdir] = contrib
+projects[workbench][subdir] = contrib
+projects[rules][subdir] = contrib
+projects[views_bulk_operations][subdir] = contrib
 projects[spaces][subdir] = contrib
 
 projects[module_filter][subdir] = contrib
