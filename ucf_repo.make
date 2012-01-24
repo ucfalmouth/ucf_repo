@@ -36,8 +36,9 @@ projects[field_group][subdir] = contrib
 projects[workbench][subdir] = contrib
 projects[rules][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
-
 projects[module_filter][subdir] = contrib
+
+projects[name][subdir] = contrib
 
 ; Themes ======================================================================
 
