@@ -39,6 +39,7 @@ projects[views_bulk_operations][subdir] = contrib
 projects[module_filter][subdir] = contrib
 
 projects[name][subdir] = contrib
+projects[email][subdir] = contrib
 
 ; Themes ======================================================================
 
