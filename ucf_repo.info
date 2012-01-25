@@ -26,13 +26,14 @@ dependencies[] = strongarm
 dependencies[] = views
 dependencies[] = views_ui
 
-dependencies[] = boxes
-dependencies[] = views_boxes
+; dependencies[] = boxes
+; dependencies[] = views_boxes
 
 dependencies[] = ds
 dependencies[] = ds_search
 dependencies[] = ds_forms
 dependencies[] = ds_extras
+dependencies[] = eva
 
 dependencies[] = node_reference
 dependencies[] = user_reference

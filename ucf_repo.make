@@ -38,6 +38,9 @@ projects[rules][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
 projects[module_filter][subdir] = contrib
 projects[auto_nodetitle][subdir] = contrib
+projects[features_orphans][subdir] = contrib
+projects[ftools][subdir] = contrib
+projects[features_plumber][subdir] = contrib
 
 projects[name][subdir] = contrib
 projects[email][subdir] = contrib

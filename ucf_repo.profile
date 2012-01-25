@@ -36,6 +36,11 @@ function ucf_repo_research_environment_form ($form_state) {
 	'#title' => t('Development mode'), 
 	'#description' => 'Setup with development modules and features enabled'
 	);
+	$form['uk_region'] = array(
+	'#type' => 'checkbox', 
+	'#title' => t('UK regional settings'), 
+	'#description' => 'Setup with UK style date formats etc'
+	);
 	$form['submit'] = array('#type' => 'submit', '#value' => t('submit'));
 	$form['#submit'][] = 'ucf_repo_research_environment_form_submit';
   return $form;
@@ -57,10 +62,20 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 		module_enable(
 			array(
 			'devel',
+			'devel_generate',
 			'dev_tweaks',
 			'module_filter',
+			'ftools',
+			'features_orphans',
+			'features_plumber',
 			)
 		);
+	if ($form['uk_region']['#value']) {
+		 variable_set('date_format_long', 'l, F j, Y - H:i');
+		 variable_set('date_format_medium', 'D, d/m/Y - H:i');
+		 variable_set('date_format_short', 'd/m/Y - H:i');
+	}
+		
 		watchdog('ucf_repo', 'dev mode selected');
 	}
 }
