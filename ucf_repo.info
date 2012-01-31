@@ -44,6 +44,7 @@ dependencies[] = admin_menu
 dependencies[] = backup_migrate
 dependencies[] = views_oai_pmh
 
+dependencies[] = ldap_authentication
 
 ; Features
 dependencies[] = repository_defaults
@@ -54,4 +55,6 @@ dependencies[] = repo_researcher_c4r
 dependencies[] = repo_researchgroup
 dependencies[] = repo_researchmanager
 
-dependencies[] = ldap_authentication
+; Custom Modules
+dependencies[] = research_views
+
