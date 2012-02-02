@@ -43,8 +43,10 @@ projects[features_orphans][subdir] = contrib
 projects[ftools][subdir] = contrib
 projects[features_plumber][subdir] = contrib
 
+; fields
 projects[name][subdir] = contrib
 projects[email][subdir] = contrib
+projects[languagefield][subdir] = contrib
 
 projects[ldap][subdir] = contrib
 
