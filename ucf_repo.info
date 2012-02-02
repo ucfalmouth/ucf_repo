@@ -14,8 +14,8 @@ dependencies[] = taxonomy
 
 ; Contrib
 dependencies[] = admin
-dependencies[] = openid
-dependencies[] = openidadmin
+; dependencies[] = openid
+; dependencies[] = openidadmin
 dependencies[] = context
 dependencies[] = context_ui
 dependencies[] = ctools
