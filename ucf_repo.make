@@ -49,6 +49,7 @@ projects[email][subdir] = contrib
 projects[languagefield][subdir] = contrib
 
 projects[ldap][subdir] = contrib
+projects[schemaorg][subdir] = contrib
 
 ; Themes ======================================================================
 
