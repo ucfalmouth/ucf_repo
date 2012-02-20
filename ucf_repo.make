@@ -69,6 +69,13 @@ projects[research_views][subdir] = custom
 projects[research_views][download][type] = git
 projects[research_views][download][url] = git@github.com:ucfalmouth/researcher_views.git
 
+projects[research_views][type] = module
+projects[research_views][subdir] = custom
+projects[research_views][download][type] = git
+projects[research_views][download][url] = git@github.com:ucfalmouth/deposit_block.git
+
+
+
 ; Features ====================================================================
 
 projects[ucf_repo_features][type] = module
