@@ -16,6 +16,7 @@ projects[rubik][subdir] = contrib
 projects[admin_menu][subdir] = contrib
 projects[backup_migrate][subdir] = contrib
 projects[views_oai_pmh][subdir] = contrib
+projects[views_oai_pmh][version] = 7.x-1.x-dev
 projects[references][subdir] = contrib
 projects[entity][subdir] = contrib
 projects[profile2][subdir] = contrib
@@ -30,7 +31,9 @@ projects[entity_autocomplete][subdir] = contrib
 
 projects[ds][subdir] = contrib
 projects[eva][subdir] = contrib
+projects[eva][version] = 7.x-1.1
 projects[spaces][subdir] = contrib
+projects[spaces][version] = 7.x-3.x-dev
 projects[field_group][subdir] = contrib
 
 ; projects[workbench][subdir] = contrib
