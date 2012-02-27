@@ -72,10 +72,10 @@ projects[research_views][subdir] = custom
 projects[research_views][download][type] = git
 projects[research_views][download][url] = git@github.com:ucfalmouth/research_views.git
 
-projects[research_views][type] = module
-projects[research_views][subdir] = custom
-projects[research_views][download][type] = git
-projects[research_views][download][url] = git@github.com:ucfalmouth/deposit_block.git
+projects[deposit_block][type] = module
+projects[deposit_block][subdir] = custom
+projects[deposit_block][download][type] = git
+projects[deposit_block][download][url] = git@github.com:ucfalmouth/deposit_block.git
 
 
 
