@@ -31,9 +31,9 @@ projects[entity_autocomplete][subdir] = contrib
 
 projects[ds][subdir] = contrib
 projects[eva][subdir] = contrib
-projects[eva][version] = 7.x-1.1
+projects[eva][version] = 1.1
 projects[spaces][subdir] = contrib
-projects[spaces][version] = 7.x-3.x-dev
+projects[spaces][version] = 3.x-dev
 projects[field_group][subdir] = contrib
 
 ; projects[workbench][subdir] = contrib
