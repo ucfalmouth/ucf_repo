@@ -70,7 +70,7 @@ projects[apartik][download][url] = git@github.com:tombola/apartik.git
 projects[research_views][type] = module
 projects[research_views][subdir] = custom
 projects[research_views][download][type] = git
-projects[research_views][download][url] = git@github.com:ucfalmouth/researcher_views.git
+projects[research_views][download][url] = git@github.com:ucfalmouth/research_views.git
 
 projects[research_views][type] = module
 projects[research_views][subdir] = custom
