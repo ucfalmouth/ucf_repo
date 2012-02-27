@@ -11,6 +11,8 @@ includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/refs/heads/7.
 projects[tao][subdir] = contrib
 projects[rubik][subdir] = contrib
 
+projects[drupal][patch][] = "http://dl.dropbox.com/u/21129417/build/ucf_repo/seven-repocon.patch"
+
 ; Modules =====================================================================
 
 projects[admin_menu][subdir] = contrib
