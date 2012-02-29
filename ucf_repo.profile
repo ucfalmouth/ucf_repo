@@ -31,6 +31,11 @@ function ucf_repo_research_environment_form ($form_state) {
 	'#title' => t('UCF Research Environment'), 
 	'#description' => 'Setup according to Falmouth research environment'
 	);
+	$form['ucf_authenticate'] = array(
+	'#type' => 'checkbox', 
+	'#title' => t('UCF Authentication'), 
+	'#description' => 'Apply UCF environment authentication settings - relies on LDAP functionality, not recommended for local install'
+	);
 	$form['dev_mode'] = array(
 	'#type' => 'checkbox', 
 	'#title' => t('Development mode'), 
@@ -54,10 +59,17 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 			'node_export',
 			'ucf_research_groups',
 			'ucf_institution',
-			'ucf_authenticate',	
 			)
 		);
 		watchdog('ucf_repo', 'ucf research environment selected');
+	}
+	if ($form['ucf_authenticate']['#value']) {
+		module_enable(
+			array(
+			'ucf_authenticate',	
+			)
+		);
+		watchdog('ucf_repo', 'ucf ldap authentication enabled');
 	}
 	if ($form['dev_mode']['#value']) {
 		module_enable(
