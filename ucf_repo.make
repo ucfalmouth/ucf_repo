@@ -80,10 +80,16 @@ projects[deposit_block][download][type] = git
 projects[deposit_block][download][url] = git@github.com:ucfalmouth/deposit_block.git
 
 
-
 ; Features ====================================================================
 
 projects[ucf_repo_features][type] = module
 projects[ucf_repo_features][subdir] = custom
 projects[ucf_repo_features][download][type] = git
 projects[ucf_repo_features][download][url] = git@github.com:ucfalmouth/ucf_repo_features.git
+
+; UCF private ====================================================================
+
+projects[ucf_authenticate][type] = module
+projects[ucf_authenticate][subdir] = custom
+projects[ucf_authenticate][download][type] = git
+projects[ucf_authenticate][download][url] = git@github.com:ucfalmouth/ucf_authenticate.git

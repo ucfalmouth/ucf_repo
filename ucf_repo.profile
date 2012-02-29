@@ -54,6 +54,7 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 			'node_export',
 			'ucf_research_groups',
 			'ucf_institution',
+			'ucf_authenticate',	
 			)
 		);
 		watchdog('ucf_repo', 'ucf research environment selected');
