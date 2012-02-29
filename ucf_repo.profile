@@ -31,8 +31,6 @@ function ucf_repo_research_environment_form ($form_state) {
 	'#title' => t('UCF Research Environment'), 
 	'#description' => 'Setup according to Falmouth research environment'
 	);
-
-	);
 	$form['dev_mode'] = array(
 	'#type' => 'checkbox', 
 	'#title' => t('Development mode'), 
