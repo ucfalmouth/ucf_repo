@@ -70,14 +70,13 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 			'features_orphans',
 			'features_plumber',
 			)
-		);
+		);	
+		watchdog('ucf_repo', 'dev mode selected');
+	}
 	if ($form['uk_region']['#value']) {
 		 variable_set('date_format_long', 'l, F j, Y - H:i');
 		 variable_set('date_format_medium', 'D, d/m/Y - H:i');
 		 variable_set('date_format_short', 'd/m/Y - H:i');
-	}
-		
-		watchdog('ucf_repo', 'dev mode selected');
 	}
 }
 
