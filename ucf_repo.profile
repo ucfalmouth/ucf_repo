@@ -69,6 +69,7 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 			'ftools',
 			'features_orphans',
 			'features_plumber',
+			'contextual',
 			)
 		);	
 		watchdog('ucf_repo', 'dev mode selected');
