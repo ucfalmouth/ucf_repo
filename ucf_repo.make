@@ -36,24 +36,28 @@ projects[spaces][subdir] = contrib
 projects[spaces][version] = 3.x-dev
 projects[field_group][subdir] = contrib
 
-; projects[workbench][subdir] = contrib
-projects[workflow][subdir] = contrib
+; workflow ====================
+; patch workbench to allow features exportables
+projects[workbench][subdir] = contrib
+projects[workbench][patch][] = http://drupal.org/files/0001-Issue-1314508-by-Valor-ericduran-Added-Make-states-e.patch
+; projects[workflow][subdir] = contrib
+
 projects[rules][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
+
+; developer ====================
 projects[module_filter][subdir] = contrib
 projects[auto_nodetitle][subdir] = contrib
 projects[features_orphans][subdir] = contrib
 projects[ftools][subdir] = contrib
 projects[features_plumber][subdir] = contrib
 
-; fields
+; fields =======================
 projects[content_type_groups][subdir] = contrib
 projects[content_type_groups][patch][] = http://drupal.org/files/content_type_groups-check_old_type-1470050-1.patch
-
 projects[name][subdir] = contrib
 projects[email][subdir] = contrib
 projects[languagefield][subdir] = contrib
-
 projects[ldap][subdir] = contrib
 projects[schemaorg][subdir] = contrib
 
@@ -67,7 +71,7 @@ projects[apartik][download][type] = git
 projects[apartik][download][url] = git@github.com:tombola/apartik.git
 
 
-; Custom Modules ====================================================================
+; Custom Modules ==============================================================
 
 projects[research_views][type] = module
 projects[research_views][subdir] = custom
