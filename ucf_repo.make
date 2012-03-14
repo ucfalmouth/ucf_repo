@@ -24,6 +24,7 @@ projects[uuid][subdir] = contrib
 projects[node_export][subdir] = contrib
 projects[node_export][patch][installfix][url] = "http://dl.dropbox.com/u/21129417/build/ucf_repo/node_export.installprofile.patch"
 projects[date][subdir] = contrib
+projects[taxonomy_csv][subdir] = contrib
 
 projects[boxes][subdir] = contrib
 projects[views_boxes][subdir] = contrib
