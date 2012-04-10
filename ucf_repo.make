@@ -32,7 +32,7 @@ projects[entity_autocomplete][subdir] = contrib
 
 projects[ds][subdir] = contrib
 projects[eva][subdir] = contrib
-projects[eva][version] = 1.1
+projects[eva][version] = 1.x
 projects[spaces][subdir] = contrib
 projects[spaces][version] = 3.x-dev
 projects[field_group][subdir] = contrib
