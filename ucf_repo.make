@@ -62,6 +62,8 @@ projects[languagefield][subdir] = contrib
 projects[ldap][subdir] = contrib
 projects[schemaorg][subdir] = contrib
 
+projects[nodereference_url][subdir] = contrib
+
 ; Themes ======================================================================
 
 projects[basic][subdir] = contrib
