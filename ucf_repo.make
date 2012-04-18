@@ -39,8 +39,8 @@ projects[field_group][subdir] = contrib
 
 ; workflow ====================
 ; patch workbench to allow features exportables
-projects[workbench][subdir] = contrib
-projects[workbench][patch][] = http://drupal.org/files/0001-Issue-1314508-by-Valor-ericduran-Added-Make-states-e.patch
+projects[workbench_moderation][subdir] = contrib
+projects[workbench_moderation][patch][] = http://drupal.org/files/workbench_moderation-featuresint-state-transition-1314508-22.patch
 ; projects[workflow][subdir] = contrib
 
 projects[rules][subdir] = contrib
