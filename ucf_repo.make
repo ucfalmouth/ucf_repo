@@ -39,6 +39,8 @@ projects[spaces][version] = 3.x-dev
 projects[field_group][subdir] = contrib
 
 ; workflow ====================
+projects[bundle_inherit][subdir] = contrib
+projects[bundle_inherit][patch][] = http://drupal.org/files/bundle_inherit-7.x-1580322-1.patch
 ; patch workbench to allow features exportables
 projects[workbench_moderation][subdir] = contrib
 projects[workbench_moderation][patch][] = http://drupal.org/files/workbench_moderation-featuresint-state-transition-1314508-22.patch
