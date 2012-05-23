@@ -5,14 +5,19 @@
  * Allows the profile to alter the site configuration form.
  */
 function ucf_repo_form_install_configure_form_alter(&$form, $form_state) {
+	// if panopoly is present, include it's changes 
+	(ucf_repo_panopoly_is_present())? panopoly_form_install_configure_form_alter($form, $form_state);
   // Pre-populate the site name with the server name.
-  $form['site_information']['site_name']['#default_value'] = t('Repository');
+  $form['site_information']['site_name']['#default_value'] = t('Research Repository');
+	$form['server_settings']['site_default_country']['#default_value'] = 'UK';
+	$form['server_settings']['date_default_timezone']['#default_value'] = 'Europe/London'; // West coast, best coast
 }
 
 /**
  * Implements hook_install_tasks().
  */
 function ucf_repo_install_tasks ($install_state) {
+	(ucf_repo_panopoly_is_present())? $tasks = panopoly_install_tasks($install_state);
 	$tasks['ucf_repo_research_environment_form'] = array(
 	  'display_name' => st('Research Environment'),
 	  'display' => TRUE,
@@ -20,6 +25,30 @@ function ucf_repo_install_tasks ($install_state) {
 	);
 	return $tasks;
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter()
+ */
+function ucf_repo_form_install_configure_form_alter(&$form, $form_state) {
+	(ucf_repo_panopoly_is_present())? panopoly_form_install_configure_form_alter(&$form, $form_state); 
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter()
+ */
+function ucf_repo_form_apps_profile_apps_select_form_alter(&$form, $form_state) {
+	(ucf_repo_panopoly_is_present())? panopoly_form_apps_profile_apps_select_form_alter($form, $form_state); 
+}
+
+/**
+ * Implements hook_install_tasks_alter()
+ *
+ * Note: Panopoly currently dictates single language here
+ */
+function ucf_repo_install_tasks_alter(&$tasks, $install_state) {
+	(ucf_repo_panopoly_is_present())? panopoly_install_tasks_alter($tasks, $install_state);
+}
+
 
 function ucf_repo_research_environment_form ($form_state) {
 	$form['description'] = array(
@@ -79,6 +108,14 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 		 variable_set('date_format_medium', 'D, d/m/Y - H:i');
 		 variable_set('date_format_short', 'd/m/Y - H:i');
 	}
+}
+
+function ucf_repo_panopoly_is_present() {
+	if ($panpath = drupal_get_path('module', 'panopoly')) {
+	 require_once($panpath);
+	 return TRUE;
+	}
+	return FALSE;
 }
 
 ?>

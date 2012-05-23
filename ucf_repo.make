@@ -1,15 +1,24 @@
 api = 2
 core = 7.x
+projects[drupal][type] = core
+projects[drupal][version] = 7.14
+; patch for/from panopoly
+projects[drupal][patch][985814] = http://drupal.org/files/drupal-actions-985814-11-D7.patch
 
 ; Include Build Kit install profile makefile via URL
-includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/refs/heads/7.x-2.x:/drupal-org.make
+; includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/refs/heads/7.x-2.x:/distro.make
+
+; Include Panopoly make file
+includes[] = http://drupalcode.org/project/panopoly.git/blob_plain/refs/heads/7.x-1.x:/drupal-org.make
 
 ;--------------------
-; Build Kit overrides
+; Build Kit overlap
 ;--------------------
 
 projects[tao][subdir] = contrib
 projects[rubik][subdir] = contrib
+projects[diff][subdir] = contrib
+
 
 ; Modules =====================================================================
 

@@ -1,6 +1,6 @@
 name = UCF Repository
 core = 7.x
-description = profile built on top of buildkit
+description = profile built on top of buildkit/panopoly
 
 ; Core
 dependencies[] = book
@@ -57,4 +57,110 @@ dependencies[] = repo_researchmanager
 
 ; Custom Modules
 dependencies[] = research_views
+
+
+
+; PANOPOLY DEPENDENCIES - panopoly.info
+; Core
+dependencies[] = menu
+dependencies[] = image
+dependencies[] = list
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = search
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = block
+dependencies[] = dblog
+
+; Contrib - Foundation 
+dependencies[] = ctools
+dependencies[] = panels
+dependencies[] = panels_ipe
+dependencies[] = panels_breadcrumbs
+dependencies[] = pm_existing_pages
+dependencies[] = page_manager
+dependencies[] = fieldable_panels_panes
+dependencies[] = panelizer
+dependencies[] = views
+dependencies[] = views_content
+dependencies[] = views_ui
+dependencies[] = token
+
+; Contrib - Field UI and Content Types
+dependencies[] = tablefield
+dependencies[] = link
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_popup
+dependencies[] = date_views
+dependencies[] = views_slideshow
+dependencies[] = views_slideshow_cycle
+dependencies[] = simple_gmap
+dependencies[] = field_group
+dependencies[] = file_entity
+
+; Contrib - Media
+dependencies[] = media
+dependencies[] = media_internet
+dependencies[] = mediafield
+dependencies[] = media_youtube
+dependencies[] = media_vimeo
+
+; Contrib - Menus and URLS
+dependencies[] = pathauto
+dependencies[] = menu_block
+
+; Contrib - User Experience
+dependencies[] = wysiwyg
+dependencies[] = wysiwyg_filter
+dependencies[] = better_formats
+dependencies[] = caption_filter
+dependencies[] = image_resize_filter
+dependencies[] = date_popup_authored
+dependencies[] = admin
+dependencies[] = module_filter
+dependencies[] = views_bulk_operations
+dependencies[] = simplified_menu_admin
+dependencies[] = references_dialog 
+dependencies[] = backports
+
+; Contrib - Search 
+dependencies[] = search_api
+dependencies[] = search_api_solr
+dependencies[] = facetapi
+dependencies[] = search_api_facetapi
+dependencies[] = search_api_views
+
+; Contrib - Products
+dependencies[] = apps 
+dependencies[] = features
+dependencies[] = entity
+dependencies[] = uuid
+dependencies[] = defaultcontent
+dependencies[] = strongarm
+dependencies[] = libraries
+
+; Contrib - Performance
+dependencies[] = redis
+
+; Contrib - Development
+dependencies[] = devel
+dependencies[] = devel_generate
+
+; Contrib - Theme
+dependencies[] = conditional_styles
+dependencies[] = respondjs
+dependencies[] = fontyourface
+dependencies[] = fontyourface_ui
+dependencies[] = fontsquirrel
+
+; CSS Stylesheets
+stylesheets[all][] = panopoly.css
+
+; Files
+files[] = panopoly.profile
 
