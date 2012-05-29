@@ -6,7 +6,7 @@
  */
 function ucf_repo_form_install_configure_form_alter(&$form, $form_state) {
 	// if panopoly is present, include it's changes 
-	(ucf_repo_panopoly_is_present())? panopoly_form_install_configure_form_alter($form, $form_state);
+	(ucf_repo_panopoly_is_present())? panopoly_form_install_configure_form_alter($form, $form_state): NULL;
   // Pre-populate the site name with the server name.
   $form['site_information']['site_name']['#default_value'] = t('Research Repository');
 	$form['server_settings']['site_default_country']['#default_value'] = 'UK';
@@ -17,7 +17,7 @@ function ucf_repo_form_install_configure_form_alter(&$form, $form_state) {
  * Implements hook_install_tasks().
  */
 function ucf_repo_install_tasks ($install_state) {
-	(ucf_repo_panopoly_is_present())? $tasks = panopoly_install_tasks($install_state);
+	$tasks = (ucf_repo_panopoly_is_present())? panopoly_install_tasks($install_state): array();
 	$tasks['ucf_repo_research_environment_form'] = array(
 	  'display_name' => st('Research Environment'),
 	  'display' => TRUE,
@@ -30,14 +30,14 @@ function ucf_repo_install_tasks ($install_state) {
  * Implements hook_form_FORM_ID_alter()
  */
 function ucf_repo_form_install_configure_form_alter(&$form, $form_state) {
-	(ucf_repo_panopoly_is_present())? panopoly_form_install_configure_form_alter(&$form, $form_state); 
+	(ucf_repo_panopoly_is_present())? panopoly_form_install_configure_form_alter($form, $form_state) : NULL; 
 }
 
 /**
  * Implements hook_form_FORM_ID_alter()
  */
 function ucf_repo_form_apps_profile_apps_select_form_alter(&$form, $form_state) {
-	(ucf_repo_panopoly_is_present())? panopoly_form_apps_profile_apps_select_form_alter($form, $form_state); 
+	(ucf_repo_panopoly_is_present())? panopoly_form_apps_profile_apps_select_form_alter($form, $form_state) : NULL; 
 }
 
 /**
