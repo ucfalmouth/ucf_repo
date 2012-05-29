@@ -1,15 +1,24 @@
 api = 2
 core = 7.x
+projects[drupal][type] = core
+projects[drupal][version] = 7.14
+; patch for/from panopoly
+projects[drupal][patch][985814] = http://drupal.org/files/drupal-actions-985814-11-D7.patch
 
 ; Include Build Kit install profile makefile via URL
-includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/refs/heads/7.x-2.x:/drupal-org.make
+; includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/refs/heads/7.x-2.x:/distro.make
+  
+; Include Panopoly make file
+includes[] = http://drupalcode.org/project/panopoly.git/blob_plain/refs/heads/7.x-1.x:/drupal-org.make
 
 ;--------------------
-; Build Kit overrides
+; Build Kit overlap
 ;--------------------
 
 projects[tao][subdir] = contrib
 projects[rubik][subdir] = contrib
+projects[diff][subdir] = contrib
+
 
 ; Modules =====================================================================
 
@@ -23,7 +32,7 @@ projects[entity][subdir] = contrib
 projects[profile2][subdir] = contrib
 projects[uuid][subdir] = contrib
 projects[node_export][subdir] = contrib
-projects[node_export][patch][installfix][url] = "http://dl.dropbox.com/u/21129417/build/ucf_repo/node_export.installprofile.patch"
+; projects[node_export][patch][installfix][url] = "http://dl.dropbox.com/u/21129417/build/ucf_repo/node_export.installprofile.patch"
 projects[date][subdir] = contrib
 projects[taxonomy_csv][subdir] = contrib
 
@@ -40,7 +49,7 @@ projects[field_group][subdir] = contrib
 
 ; workflow ====================
 projects[bundle_inherit][subdir] = contrib
-projects[bundle_inherit][patch][] = http://drupal.org/files/bundle_inherit-7.x-1580322-1.patch
+; projects[bundle_inherit][patch][] = http://drupal.org/files/bundle_inherit-7.x-1580322-1.patch
 ; patch workbench to allow features exportables
 projects[workbench_moderation][subdir] = contrib
 projects[workbench_moderation][patch][] = http://drupal.org/files/workbench_moderation-featuresint-state-transition-1314508-22.patch
