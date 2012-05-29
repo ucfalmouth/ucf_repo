@@ -1,2 +1,4 @@
-modules
-themes
+/modules/contrib/*
+/modules/custom/*
+/themes/contrib/*
+/themes/custom/*
