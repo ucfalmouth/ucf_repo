@@ -32,7 +32,7 @@ projects[entity][subdir] = contrib
 projects[profile2][subdir] = contrib
 projects[uuid][subdir] = contrib
 projects[node_export][subdir] = contrib
-projects[node_export][patch][installfix][url] = "http://dl.dropbox.com/u/21129417/build/ucf_repo/node_export.installprofile.patch"
+; projects[node_export][patch][installfix][url] = "http://dl.dropbox.com/u/21129417/build/ucf_repo/node_export.installprofile.patch"
 projects[date][subdir] = contrib
 projects[taxonomy_csv][subdir] = contrib
 
@@ -49,7 +49,7 @@ projects[field_group][subdir] = contrib
 
 ; workflow ====================
 projects[bundle_inherit][subdir] = contrib
-projects[bundle_inherit][patch][] = http://drupal.org/files/bundle_inherit-7.x-1580322-1.patch
+; projects[bundle_inherit][patch][] = http://drupal.org/files/bundle_inherit-7.x-1580322-1.patch
 ; patch workbench to allow features exportables
 projects[workbench_moderation][subdir] = contrib
 projects[workbench_moderation][patch][] = http://drupal.org/files/workbench_moderation-featuresint-state-transition-1314508-22.patch
