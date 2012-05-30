@@ -29,15 +29,8 @@ function ucf_repo_install_tasks ($install_state) {
 /**
  * Implements hook_form_FORM_ID_alter()
  */
-function ucf_repo_form_install_configure_form_alter(&$form, $form_state) {
-	(ucf_repo_panopoly_is_present())? panopoly_form_install_configure_form_alter($form, $form_state) : NULL; 
-}
-
-/**
- * Implements hook_form_FORM_ID_alter()
- */
 function ucf_repo_form_apps_profile_apps_select_form_alter(&$form, $form_state) {
-	(ucf_repo_panopoly_is_present())? panopoly_form_apps_profile_apps_select_form_alter($form, $form_state) : NULL; 
+	(ucf_repo_panopoly_is_present())? panopoly_form_apps_profile_apps_select_form_alter($form, $form_state): NULL; 
 }
 
 /**
@@ -46,7 +39,7 @@ function ucf_repo_form_apps_profile_apps_select_form_alter(&$form, $form_state) 
  * Note: Panopoly currently dictates single language here
  */
 function ucf_repo_install_tasks_alter(&$tasks, $install_state) {
-	(ucf_repo_panopoly_is_present())? panopoly_install_tasks_alter($tasks, $install_state);
+	(ucf_repo_panopoly_is_present())? panopoly_install_tasks_alter($tasks, $install_state): NULL;
 }
 
 
