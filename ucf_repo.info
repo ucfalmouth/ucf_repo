@@ -53,7 +53,7 @@ dependencies[] = repo_institution
 dependencies[] = repo_output
 dependencies[] = repo_researcher
 dependencies[] = repo_researchgroup
-dependencies[] = repo_researchmanager
+; dependencies[] = repo_researchmanager
 
 ; Custom Modules
 dependencies[] = research_views
