@@ -24,3 +24,8 @@ projects[panopoly][type] = profile
 projects[panopoly][download][type] = git
 projects[panopoly][download][url] = http://git.drupal.org/project/panopoly.git
 projects[panopoly][download][branch] = 7.x-1.x
+
+projects[buildkit][type] = profile
+projects[buildkit][download][type] = git
+projects[buildkit][download][url] = http://drupalcode.org/project/buildkit
+projects[buildkit][download][branch] = 7.x-2.x
