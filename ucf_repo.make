@@ -47,6 +47,7 @@ projects[context][subdir] = contrib
 projects[spaces][subdir] = contrib
 projects[spaces][version] = 3.x-dev
 projects[field_group][subdir] = contrib
+projects[field_collection][subdir] = contrib
 
 ; workflow ====================
 projects[bundle_inherit][subdir] = contrib

@@ -106,8 +106,10 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 function ucf_repo_panopoly_is_present() {
 	if ($panpath = drupal_get_path('module', 'panopoly')) {
 	 require_once($panpath);
+	 drupal_set_message('ucf_repo_panopoly_is_present: TRUE');
 	 return TRUE;
 	}
+	drupal_set_message('ucf_repo_panopoly_is_present: FALSE');
 	return FALSE;
 }
 
