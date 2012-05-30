@@ -27,5 +27,5 @@ projects[panopoly][download][branch] = 7.x-1.x
 
 projects[buildkit][type] = profile
 projects[buildkit][download][type] = git
-projects[buildkit][download][url] = http://drupalcode.org/project/buildkit
+projects[buildkit][download][url] = http://drupalcode.org/project/buildkit.git
 projects[buildkit][download][branch] = 7.x-2.x
