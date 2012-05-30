@@ -20,7 +20,7 @@ projects[ucf_repo][type] = profile
 projects[ucf_repo][download][type] = git
 projects[ucf_repo][download][url] = git@github.com:ucfalmouth/ucf_repo.git
 
-projects[ucf_repo][type] = profile
-projects[ucf_repo][download][type] = git
-projects[ucf_repo][download][url] = http://git.drupal.org/project/panopoly.git
-projects[ucf_repo][download][branch] = 7.x-1.x
+projects[panopoly][type] = profile
+projects[panopoly][download][type] = git
+projects[panopoly][download][url] = http://git.drupal.org/project/panopoly.git
+projects[panopoly][download][branch] = 7.x-1.x
