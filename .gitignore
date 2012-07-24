@@ -2,3 +2,6 @@
 /modules/custom/*
 /themes/contrib/*
 /themes/custom/*
+/modules
+/themes
+.DS_Store
