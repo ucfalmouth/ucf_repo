@@ -31,8 +31,6 @@ projects[references][subdir] = contrib
 projects[entity][subdir] = contrib
 projects[profile2][subdir] = contrib
 projects[uuid][subdir] = contrib
-projects[node_export][subdir] = contrib
-; projects[node_export][patch][installfix][url] = "http://dl.dropbox.com/u/21129417/build/ucf_repo/node_export.installprofile.patch"
 projects[date][subdir] = contrib
 projects[taxonomy_csv][subdir] = contrib
 
@@ -50,8 +48,6 @@ projects[field_group][subdir] = contrib
 projects[field_collection][subdir] = contrib
 
 ; workflow ====================
-projects[bundle_inherit][subdir] = contrib
-; projects[bundle_inherit][patch][] = http://drupal.org/files/bundle_inherit-7.x-1580322-1.patch
 ; patch workbench to allow features exportables
 projects[workbench_moderation][subdir] = contrib
 projects[workbench_moderation][patch][] = http://drupal.org/files/workbench_moderation-featuresint-state-transition-1314508-22.patch
@@ -66,6 +62,7 @@ projects[auto_nodetitle][subdir] = contrib
 projects[features_orphans][subdir] = contrib
 projects[ftools][subdir] = contrib
 projects[features_plumber][subdir] = contrib
+projects[entity][subdir] = contrib
 
 ; fields =======================
 projects[content_type_groups][subdir] = contrib
@@ -99,6 +96,11 @@ projects[deposit_block][type] = module
 projects[deposit_block][subdir] = custom
 projects[deposit_block][download][type] = git
 projects[deposit_block][download][url] = git@github.com:ucfalmouth/deposit_block.git
+
+projects[deposit_wizard][type] = module
+projects[deposit_wizard][subdir] = custom
+projects[deposit_wizard][download][type] = git
+projects[deposit_wizard][download][url] = git@github.com:ucfalmouth/deposit_wizard.git
 
 
 ; Features ====================================================================

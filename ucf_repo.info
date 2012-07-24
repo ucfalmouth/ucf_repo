@@ -48,12 +48,12 @@ dependencies[] = bundle_inherit_node
 dependencies[] = ldap_authentication
 
 ; Features
-dependencies[] = repository_defaults
+; dependencies[] = repository_defaults
+dependencies[] = repo_workflow
+dependencies[] = repo_ref_type_fields
 dependencies[] = repo_institution
-dependencies[] = repo_output
 dependencies[] = repo_researcher
 dependencies[] = repo_researchgroup
-; dependencies[] = repo_researchmanager
 
 ; Custom Modules
 dependencies[] = research_views
