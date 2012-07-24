@@ -7,9 +7,6 @@ projects[drupal][patch][985814] = http://drupal.org/files/drupal-actions-985814-
 
 ; Include Build Kit install profile makefile via URL
 includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/refs/heads/7.x-2.x:/distro.make
-  
-; Include Panopoly make file
-includes[] = http://drupalcode.org/project/panopoly.git/blob_plain/refs/heads/7.x-1.x:/drupal-org.make
 
 ;--------------------
 ; Build Kit overlap
@@ -51,10 +48,9 @@ projects[field_collection][subdir] = contrib
 ; patch workbench to allow features exportables
 projects[workbench_moderation][subdir] = contrib
 projects[workbench_moderation][patch][] = http://drupal.org/files/workbench_moderation-featuresint-state-transition-1314508-22.patch
-; projects[workflow][subdir] = contrib
-
 projects[rules][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
+projects[total_control][subdir] = contrib
 
 ; developer ====================
 projects[module_filter][subdir] = contrib
