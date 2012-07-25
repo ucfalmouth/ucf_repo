@@ -2,8 +2,6 @@ api = 2
 core = 7.x
 projects[drupal][type] = core
 projects[drupal][version] = 7.14
-; patch for/from panopoly
-projects[drupal][patch][985814] = http://drupal.org/files/drupal-actions-985814-11-D7.patch
 
 ; Include Build Kit install profile makefile via URL
 includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/refs/heads/7.x-2.x:/distro.make
@@ -42,7 +40,9 @@ projects[context][subdir] = contrib
 projects[spaces][subdir] = contrib
 projects[spaces][version] = 3.x-dev
 projects[field_group][subdir] = contrib
-projects[field_collection][subdir] = contrib
+; projects[field_collection][subdir] = contrib
+projects[entityreference][subdir] = contrib
+projects[entityreference][patch][] = http://drupal.org/files/explicity_include_module.1459540.patch
 
 ; workflow ====================
 ; patch workbench to allow features exportables
@@ -51,6 +51,7 @@ projects[workbench_moderation][patch][] = http://drupal.org/files/workbench_mode
 projects[rules][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
 projects[total_control][subdir] = contrib
+projects[flag][subdir] = contrib
 
 ; developer ====================
 projects[module_filter][subdir] = contrib
@@ -58,7 +59,6 @@ projects[auto_nodetitle][subdir] = contrib
 projects[features_orphans][subdir] = contrib
 projects[ftools][subdir] = contrib
 projects[features_plumber][subdir] = contrib
-projects[entity][subdir] = contrib
 
 ; fields =======================
 projects[content_type_groups][subdir] = contrib
@@ -71,7 +71,7 @@ projects[schemaorg][subdir] = contrib
 
 projects[nodereference_url][subdir] = contrib
 
-; Themes ======================================================================
+; Theming ======================================================================
 
 projects[basic][subdir] = contrib
 projects[antonelli][subdir] = contrib
@@ -80,6 +80,7 @@ projects[apartik][subdir] = custom
 projects[apartik][download][type] = git
 projects[apartik][download][url] = git@github.com:tombola/apartik.git
 
+projects[fences][subdir] = contrib
 
 ; Custom Modules ==============================================================
 

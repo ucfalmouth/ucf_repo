@@ -14,20 +14,14 @@ dependencies[] = taxonomy
 
 ; Contrib
 dependencies[] = admin
-; dependencies[] = openid
-; dependencies[] = openidadmin
 dependencies[] = context
 dependencies[] = context_ui
 dependencies[] = ctools
-; dependencies[] = devel
 dependencies[] = diff
 dependencies[] = features
 dependencies[] = strongarm
 dependencies[] = views
 dependencies[] = views_ui
-
-; dependencies[] = boxes
-; dependencies[] = views_boxes
 
 dependencies[] = ds
 dependencies[] = ds_search
@@ -48,7 +42,6 @@ dependencies[] = bundle_inherit_node
 dependencies[] = ldap_authentication
 
 ; Features
-; dependencies[] = repository_defaults
 dependencies[] = repo_workflow
 dependencies[] = repo_ref_type_fields
 dependencies[] = repo_institution
