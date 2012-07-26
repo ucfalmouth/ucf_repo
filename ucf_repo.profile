@@ -69,8 +69,7 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 			'dev_tweaks',
 			'module_filter',
 			'ftools',
-			'features_orphans',
-			'features_plumber',
+			'admin_menu',
 			'contextual',
 			)
 		);	
