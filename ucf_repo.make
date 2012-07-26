@@ -62,7 +62,6 @@ projects[features_plumber][subdir] = contrib
 
 ; fields =======================
 projects[content_type_groups][subdir] = contrib
-projects[content_type_groups][patch][] = http://drupal.org/files/content_type_groups-check_old_type-1470050-1.patch
 projects[name][subdir] = contrib
 projects[email][subdir] = contrib
 projects[languagefield][subdir] = contrib
