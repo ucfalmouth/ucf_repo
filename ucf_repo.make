@@ -3,6 +3,8 @@ core = 7.x
 projects[drupal][type] = core
 projects[drupal][version] = 7.14
 
+includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/refs/heads/7.x-2.x:/drupal-org.make
+
 ;--------------------
 ; Build Kit overlap
 ;--------------------
