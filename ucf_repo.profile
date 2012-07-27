@@ -52,8 +52,6 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 	if ($form['ucf_institution']['#value']) {
 		module_enable(
 			array(
-			'uuid',
-			'node_export',
 			'ucf_research_groups',
 			'ucf_institution',
 			)
@@ -71,6 +69,7 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 			'ftools',
 			'admin_menu',
 			'contextual',
+			'taxonomy_csv',
 			)
 		);	
 		watchdog('ucf_repo', 'dev mode selected');
