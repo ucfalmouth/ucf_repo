@@ -1,4 +1,4 @@
-api = 2
+xapi = 2
 core = 7.x
 projects[drupal][type] = core
 projects[drupal][version] = 7.14
@@ -42,6 +42,7 @@ projects[field_group][subdir] = contrib
 ; projects[field_collection][subdir] = contrib
 projects[entityreference][subdir] = contrib
 projects[entityreference][patch][] = http://drupal.org/files/explicity_include_module.1459540.patch
+projects[defaultcontent][subdir] = contrib
 
 ; workflow ====================
 ; patch workbench to allow features exportables
@@ -67,7 +68,7 @@ projects[languagefield][subdir] = contrib
 projects[ldap][subdir] = contrib
 projects[schemaorg][subdir] = contrib
 
-projects[nodereference_url][subdir] = contrib
+projects[node_convert][subdir] = contrib
 
 ; Theming ======================================================================
 
