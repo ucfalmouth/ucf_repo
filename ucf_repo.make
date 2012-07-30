@@ -66,6 +66,7 @@ projects[name][subdir] = contrib
 projects[email][subdir] = contrib
 projects[languagefield][subdir] = contrib
 projects[ldap][subdir] = contrib
+projects[shib_auth][subdir] = contrib
 projects[schemaorg][subdir] = contrib
 projects[link][subdir] = contrib
 
