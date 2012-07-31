@@ -53,6 +53,7 @@ dependencies[] = repo_researchgroup
 dependencies[] = repo_management
 dependencies[] = repo_ref_submit
 dependencies[] = repo_ref_uoa
+dependencies[] = repo_metadata_management
 
 ; Custom Modules
 dependencies[] = research_views
