@@ -50,7 +50,7 @@ projects[workbench_moderation][subdir] = contrib
 projects[workbench_moderation][patch][] = http://drupal.org/files/workbench_moderation-featuresint-state-transition-1314508-22.patch
 projects[rules][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
-projects[total_control][subdir] = contrib
+projects[homebox][subdir] = contrib
 projects[flag][subdir] = contrib
 
 ; developer ====================
