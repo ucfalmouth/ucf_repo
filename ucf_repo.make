@@ -39,6 +39,7 @@ projects[context][subdir] = contrib
 projects[spaces][subdir] = contrib
 projects[spaces][version] = 3.x-dev
 projects[field_group][subdir] = contrib
+projects[field_permissions][subdir] = contrib
 ; projects[field_collection][subdir] = contrib
 projects[entityreference][subdir] = contrib
 projects[entityreference][patch][] = http://drupal.org/files/explicity_include_module.1459540.patch
