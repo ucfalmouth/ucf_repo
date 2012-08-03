@@ -61,6 +61,7 @@ projects[auto_nodetitle][subdir] = contrib
 projects[features_orphans][subdir] = contrib
 projects[ftools][subdir] = contrib
 projects[features_plumber][subdir] = contrib
+projects[coffee][subdir] = contrib
 
 ; fields =======================
 projects[content_type_groups][subdir] = contrib

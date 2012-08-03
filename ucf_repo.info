@@ -45,6 +45,7 @@ dependencies[] = rdf
 dependencies[] = ldap_authentication
 
 ; Features
+dependencies[] = repo_system_defaults
 dependencies[] = repo_workflow
 dependencies[] = repo_ref_type_fields
 dependencies[] = repo_institution
