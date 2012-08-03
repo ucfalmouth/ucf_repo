@@ -52,7 +52,7 @@ projects[workbench_moderation][patch][] = http://drupal.org/files/workbench_mode
 projects[rules][subdir] = contrib
 projects[views_bulk_operations][subdir] = contrib
 projects[homebox][subdir] = contrib
-projprojects[flag][subdir] = contribects[flag][subdir] = contrib
+projects[flag][subdir] = contrib
 projects[login_destination][subdir] = contrib
 
 ; developer ====================
