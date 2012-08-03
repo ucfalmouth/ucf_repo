@@ -70,6 +70,7 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 			'admin_menu',
 			'contextual',
 			'taxonomy_csv',
+			'coffee',
 			)
 		);	
 		watchdog('ucf_repo', 'dev mode selected');
