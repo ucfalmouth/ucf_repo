@@ -45,6 +45,9 @@ projects[entityreference][subdir] = contrib
 projects[entityreference][patch][] = http://drupal.org/files/explicity_include_module.1459540.patch
 projects[defaultcontent][subdir] = contrib
 
+; interface ===================
+projects[advanced_help][subdir] = contrib
+
 ; workflow ====================
 ; patch workbench to allow features exportables
 projects[workbench_moderation][subdir] = contrib
