@@ -43,6 +43,12 @@ function ucf_repo_research_environment_form ($form_state) {
 	'#title' => t('UK regional settings'), 
 	'#description' => 'Setup with UK style date formats etc'
 	);
+	$form['help_resources'] = array(
+	'#type' => 'checkbox', 
+	'#title' => t('Provide help resopurces for repository use'), 
+	'#default_value' => 1,
+	'#description' => 'Setup with UK style date formats etc'
+	);
 	$form['submit'] = array('#type' => 'submit', '#value' => t('submit'));
 	$form['#submit'][] = 'ucf_repo_research_environment_form_submit';
   return $form;
@@ -79,6 +85,16 @@ function ucf_repo_research_environment_form_submit ($form, $form_state) {
 		 variable_set('date_format_long', 'l, F j, Y - H:i');
 		 variable_set('date_format_medium', 'D, d/m/Y - H:i');
 		 variable_set('date_format_short', 'd/m/Y - H:i');
+	}
+	if ($form['help_resources']['#value']) {
+		module_enable(
+			array(
+			'advanced_help',
+			'helpful',
+			'helpful_hide',
+			)
+		);	
+		watchdog('ucf_repo', 'dev mode selected');
 	}
 }
 
