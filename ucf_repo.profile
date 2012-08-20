@@ -57,8 +57,8 @@ function ucf_repo_research_environment_form ($form_state) {
 function ucf_repo_research_environment_form_submit ($form, $form_state) {
 	// allow access to content for anonymous and authenticated 
 	// (http://drupal.org/node/656312#comment-6356304)
-	user_role_change_permissions(1, array $permissions = array('access content' => TRUE));
-	user_role_change_permissions(2, array $permissions = array('access content' => TRUE));
+	user_role_change_permissions(1, array('access content' => TRUE));
+	user_role_change_permissions(2, array('access content' => TRUE));
 
 	if ($form['ucf_institution']['#value']) {
 		module_enable(

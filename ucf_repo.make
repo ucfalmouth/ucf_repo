@@ -59,7 +59,7 @@ projects[views_bulk_operations][subdir] = contrib
 projects[homebox][subdir] = contrib
 projects[flag][subdir] = contrib
 projects[login_destination][subdir] = contrib
-projects[block_title][subdir] = contrib
+projects[block_titlelink][subdir] = contrib
 
 ; developer ====================
 projects[module_filter][subdir] = contrib
