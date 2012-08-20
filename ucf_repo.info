@@ -34,8 +34,6 @@ dependencies[] = ds_forms
 dependencies[] = ds_extras
 dependencies[] = eva
 
-dependencies[] = node_reference
-dependencies[] = user_reference
 dependencies[] = list
 dependencies[] = profile2
 
