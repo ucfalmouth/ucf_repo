@@ -64,6 +64,7 @@ projects[block_titlelink][subdir] = contrib
 ; developer ====================
 projects[module_filter][subdir] = contrib
 projects[auto_nodetitle][subdir] = contrib
+projects[token][subdir] = contrib
 projects[features_orphans][subdir] = contrib
 projects[ftools][subdir] = contrib
 projects[features_plumber][subdir] = contrib
