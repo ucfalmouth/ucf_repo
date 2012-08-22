@@ -33,6 +33,7 @@ projects[views_boxes][subdir] = contrib
 projects[entity_autocomplete][subdir] = contrib
 
 projects[ds][subdir] = contrib
+projects[ds][version] = 2.x
 projects[eva][subdir] = contrib
 projects[eva][version] = 1.x
 projects[context][subdir] = contrib
