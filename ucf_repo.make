@@ -50,6 +50,7 @@ projects[defaultcontent][subdir] = contrib
 projects[advanced_help][subdir] = contrib
 projects[helpful][subdir] = contrib
 projects[beautytips][subdir] = contrib
+projects[field_display_label][subdir] = contrib
 
 ; workflow ====================
 ; patch workbench to allow features exportables
